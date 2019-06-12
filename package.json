@@ -52,13 +52,13 @@
     "reflect-metadata": "^0.1.12",
     "request-promise": "^4.2.2",
     "sparkpost": "^2.1.2",
-    "typeorm": "0.2.0",
+    "typeorm": "^0.2.18",
     "uuid": "^3.2.1",
     "yup": "^0.24.1"
   },
   "scripts": {
-    "start": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
-    "test": "NODE_ENV=test jest --watch",
+    "start": "set NODE_ENV=development && nodemon --exec ts-node src/index.ts",
+    "test": "set NODE_ENV=test && jest --watchAll",
     "gen-schema-types": "ts-node src/scripts/createTypes.ts"
   },
   "jest": {
